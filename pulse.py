@@ -181,12 +181,12 @@ class Bruter(TorManager,Browser):
   attempts = self.tries if self.tries else ''
 
   subprocess.call(['clear'])
-  print '\n  {}[-] Web-Site: {}{}'.format(self.n,self.b,self.siteName)
-  print '  {}[-] Proxy Ip: {}{}'.format(self.n,self.b,ip)
-  print '  {}[-] Wordlist: {}{}'.format(self.n,self.b,self.wordlist)
-  print '  {}[-] Username: {}{}'.format(self.n,creds,self.username.title())
-  print '  {}[-] Password: {}{}'.format(self.n,creds,pwd)
-  print '  {}[-] Attempts: {}{}'.format(self.n,self.b,attempts)
+  print ('\n  {}[-] Web-Site: {}{}'.format(self.n,self.b,self.siteName))
+  print ('  {}[-] Proxy Ip: {}{}'.format(self.n,self.b,ip))
+  print ('  {}[-] Wordlist: {}{}'.format(self.n,self.b,self.wordlist))
+  print ('  {}[-] Username: {}{}'.format(self.n,creds,self.username.title())
+  print ('  {}[-] Password: {}{}'.format(self.n,creds,pwd))
+  print ('  {}[-] Attempts: {}{}'.format(self.n,self.b,attempts))
 
   if self.siteName == 'Facebook':
    print '  {}[-] Account Locked: {}{}'.format(self.n,color,self.locked)
